@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Flashlight
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>The Flashlight is {{isOn ? 'On' : 'Off'}}</ion-label>
+  </ion-item>
+  <ion-button (tap)="switchOn()">
+    Turn on
+  </ion-button>
+  <ion-button (tap)="switchOff()">
+    Turn off
+  </ion-button>
+  <ion-button (tap)="toggle()">
+    Toggle
+  </ion-button>
+</ion-content>
